@@ -12,8 +12,8 @@ dependencies:
     specifier: ^1.0.0
     version: 1.0.1
   '@discordjs/rest':
-    specifier: ^2.0.0
-    version: 2.0.1
+    specifier: ^2.2.0
+    version: 2.2.0
   '@discordjs/voice':
     specifier: ^0.16.0
     version: 0.16.0(@discordjs/opus@0.9.0)(ffmpeg-static@5.2.0)(opusscript@0.1.1)
@@ -198,11 +198,16 @@ packages:
     engines: {node: '>=16.11.0'}
     dev: false
 
+  /@discordjs/collection@2.0.0:
+    resolution: {integrity: sha512-YTWIXLrf5FsrLMycpMM9Q6vnZoR/lN2AWX23/Cuo8uOOtS8eHB2dyQaaGnaF8aZPYnttf2bkLMcXn/j6JUOi3w==}
+    engines: {node: '>=18'}
+    dev: false
+
   /@discordjs/core@1.0.1:
     resolution: {integrity: sha512-CtzHgQTXgQxs3TgnZtyKa6rnN7WyzGHH8zkZDO+W2nl6Pi7xLg0sPCDVIfD0E0+1F0BMSgq3XrY7C2ZyLinFUA==}
     engines: {node: '>=16.11.0'}
     dependencies:
-      '@discordjs/rest': 2.0.1
+      '@discordjs/rest': 2.2.0
       '@discordjs/util': 1.0.1
       '@discordjs/ws': 1.0.1
       '@sapphire/snowflake': 3.5.1
@@ -258,19 +263,19 @@ packages:
       - supports-color
     dev: false
 
-  /@discordjs/rest@2.0.1:
-    resolution: {integrity: sha512-/eWAdDRvwX/rIE2tuQUmKaxmWeHmGealttIzGzlYfI4+a7y9b6ZoMp8BG/jaohs8D8iEnCNYaZiOFLVFLQb8Zg==}
+  /@discordjs/rest@2.2.0:
+    resolution: {integrity: sha512-nXm9wT8oqrYFRMEqTXQx9DUTeEtXUDMmnUKIhZn6O2EeDY9VCdwj23XCPq7fkqMPKdF7ldAfeVKyxxFdbZl59A==}
     engines: {node: '>=16.11.0'}
     dependencies:
-      '@discordjs/collection': 1.5.3
-      '@discordjs/util': 1.0.1
+      '@discordjs/collection': 2.0.0
+      '@discordjs/util': 1.0.2
       '@sapphire/async-queue': 1.5.0
       '@sapphire/snowflake': 3.5.1
       '@vladfrangu/async_event_emitter': 2.2.2
-      discord-api-types: 0.37.50
+      discord-api-types: 0.37.61
       magic-bytes.js: 1.5.0
       tslib: 2.6.2
-      undici: 5.22.1
+      undici: 5.27.2
     dev: false
 
   /@discordjs/util@1.0.1:
@@ -306,7 +311,7 @@ packages:
     engines: {node: '>=16.11.0'}
     dependencies:
       '@discordjs/collection': 1.5.3
-      '@discordjs/rest': 2.0.1
+      '@discordjs/rest': 2.2.0
       '@discordjs/util': 1.0.1
       '@sapphire/async-queue': 1.5.0
       '@types/ws': 8.5.9
@@ -537,6 +542,11 @@ packages:
       ajv: 8.12.0
       ajv-formats: 2.1.1(ajv@8.12.0)
       fast-uri: 2.3.0
+    dev: false
+
+  /@fastify/busboy@2.1.0:
+    resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
+    engines: {node: '>=14'}
     dev: false
 
   /@fastify/deepmerge@1.3.0:
@@ -1262,7 +1272,7 @@ packages:
       '@discordjs/builders': 1.7.0
       '@discordjs/collection': 1.5.3
       '@discordjs/formatters': 0.3.2
-      '@discordjs/rest': 2.0.1
+      '@discordjs/rest': 2.2.0
       '@discordjs/util': 1.0.1
       '@discordjs/ws': 1.0.1
       '@sapphire/snowflake': 3.5.1
@@ -2908,6 +2918,13 @@ packages:
     engines: {node: '>=14.0'}
     dependencies:
       busboy: 1.6.0
+    dev: false
+
+  /undici@5.27.2:
+    resolution: {integrity: sha512-iS857PdOEy/y3wlM3yRp+6SNQQ6xU0mmZcwRSriqk+et/cwWAtwmIGf6WkoDN2EK/AMdCO/dfXzIwi+rFMrjjQ==}
+    engines: {node: '>=14.0'}
+    dependencies:
+      '@fastify/busboy': 2.1.0
     dev: false
 
   /unpipe@1.0.0:
