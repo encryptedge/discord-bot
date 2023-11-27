@@ -52,7 +52,7 @@
         "string-progressbar": "^1.0.4",
         "string-similarity": "^4.0.4",
         "xml2js": "^0.6.0",
-        "youtube-sr": "^4.3.4",
+        "youtube-sr": "^4.3.10",
         "zod": "^3.21.4"
     },
     "scripts": {
